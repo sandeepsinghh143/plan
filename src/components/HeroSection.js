@@ -20,7 +20,7 @@ export default function HeroSection() {
             </div>
             {/* image */}
             <div className='md:min-w-[40%] min-w-screen xl:h-[calc(100%-200px)] z-30 hidden md:block'>
-                <Image src={music} className='max-h-full min-w-[80%] z-40'/>
+                <Image src={music} className='max-h-full min-w-[80%] z-40' alt='music'/>
             </div>
         </div>
         <Image src={rockstar} 

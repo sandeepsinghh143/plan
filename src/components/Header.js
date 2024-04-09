@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from "next/link";
 import Button from './Button';
-import { TiThMenu } from "react-icons/ti"
 import SwipeableTemporaryDrawer from './Drawer';
 
 export default function Header() {

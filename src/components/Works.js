@@ -8,7 +8,7 @@ export default function Works() {
     <div className='bg-[#f7f6f6]'>
         <div className='w-[70%] m-auto lg:flex justify-between gap-32 items-center py-10'>
             <div className='min-w-[30%]  hidden lg:block'>
-                <Image src={work} className='w-full h-full rounded-[4rem]'/>
+                <Image src={work} className='w-full h-full rounded-[4rem]' alt='work'/>
             </div>
             <div className='w-60%'>
                 <div className='text-4xl font-bold'>How It's Works</div>
