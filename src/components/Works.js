@@ -11,7 +11,7 @@ export default function Works() {
                 <Image src={work} className='w-full h-full rounded-[4rem]' alt='work'/>
             </div>
             <div className='w-60%'>
-                <div className='text-4xl font-bold'>How It's Works</div>
+                <div className='text-4xl font-bold'>How It&apos;s Works</div>
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non libero voluptatibus maxime harum repellat tempora natus delectus, dolor est maiores eligendi eius blanditiis nihil dicta ab magnam culpa repellendus iusto.
                 </div>
                 <div className='flex flex-wrap justify-between gap-8'>
