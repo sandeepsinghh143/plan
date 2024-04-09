@@ -2,32 +2,124 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --red:#ff0000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.feature-box, .count-box, .price-card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.overview{
+    background: rgb(46,51,48);
+    background: radial-gradient(circle, rgba(46,51,48,0.835171568627451) 0%, rgba(130,125,125,1) 51%, rgba(196,196,178,1) 97%);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.footer::before{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #003C43;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: rotate(180deg);
+    scale: 1.5;
+}
+@media screen and (max-width:1300px) {
+    .footer::before{
+        border-radius: 0 0 50% 50%/0 0 60% 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer::before{
+        border-radius: 0 0 50% 50%/0 0 30% 30%;
+    }
+}
+
+input{
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+    width: 20rem;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200px;
+    bottom: -10px;
+    left: 0;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    scale: 1.5;
+    z-index: -1;
+}
+
+.hero-section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: rotate(180deg);
+    scale: 1.1;
+    z-index: 20;
+}
+
+@media screen and (max-width:959px) {
+    .one-feature{
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width:1474px) {
+    .footer-link{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        gap:0;
+    }
+
+
+    .footer-link div{
+        width:45%;
+    }
+}
+
+@media screen and (max-width:100px) {
+    .footer-inner{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .footer-link div{
+        width:90%;
+        margin:10px;
+    }
+
+    .app-download{
+        max-width: 300px;
+    }
+}
+
+a:hover{
+    color:var(--red);
 }
